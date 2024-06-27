@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(water123.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background {
+    position: absolute;
+    top: 55%;
+    left: 89.6%;
+    transform: translate(-91%, -50%);
+    width: 97%;
+    height: 82%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 100px;
+}  
+
+.welcome-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 100px;
+  margin: 20px auto;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added Calibri */
+  font-weight: 300; /* Adjusted font weight */
+  letter-spacing: 0.1px;
+  transition: all 0.3s ease;
+  margin-left: 140px;
+  margin-top: 50px;
+}
+
+.username-link{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.welcome-message:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .welcome-message {
+    width: 90%;
+    font-size: 24px;
+  }
+}
+
+.navbar {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 60px 1.5px;
+  background-color: rgba(200, 200, 200, 0.2);
+  overflow: hidden;
+  border-radius: 50px; /* Adjusted */
+  width: 80%;
+  margin: 2% auto 0; /* Adjusted */
+}
+
+.navbar img {
+  transform: translate(-5px, 3px);
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+  
+.navbar ul li {
+  margin: 0 10px;
+  font-weight: 500;
+}
+  
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+
+.navbar #log-out button {
+  height: 90%;
+  font-size: 25px;
+  padding: 5px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 10px;
+}
+
+#background {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  transform: translate(-91%, -50%);
+  width: 33%;
+  height: 37%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 5px;
+}
+
+#background .image-link {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  transform: translate(35px, 15px);
+}
+
+#background .image-link img {
+  width: 150px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+#background .image-link:hover img {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#background .image-link::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* White border */
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade in border on hover */
+}
+
+#background .image-link:hover::before {
+  opacity: 1; /* Show border on hover */
+}
+
+#background .image-link::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.1); /* White overlay */
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade in overlay on hover */
+}
+
+#background .image-link:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.appointment-form {
+  position: absolute;
+  top: 38%;
+  left: 27%;
+  transform: translate(68%, -45%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.appointment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  width: 470px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.navbar ul li:last-child {
+  margin-left: 700px; /* Push the sign-out button to the right */
+}
+
+.navbar ul li:last-child a {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.navbar ul li:last-child a:hover {
+  background-color: #0056b3;
+}
+
+#floating-message {
+    position: fixed;
+    top: 50%;
+    left: 69%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease;
+    width: 200px;
+}
+
+/* Other styles remain unchanged */
+
+

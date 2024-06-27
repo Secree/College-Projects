@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(water123.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background {
+  position: absolute;
+  top: 55%;
+  left: 89.6%;
+  transform: translate(-91%, -50%);
+  width: 97%;
+  height: 82%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 100px;
+}
+
+#tago {
+  display: none;
+}
+
+.navbar {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 60px 1.5px;
+  background-color: rgba(200, 200, 200, 0.2);
+  overflow: hidden;
+  border-radius: 50px; /* Adjusted */
+  width: 80%;
+  margin: 2% auto 0; /* Adjusted */
+}
+
+.navbar img {
+  transform: translate(-5px, 3px);
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+  
+.navbar ul li {
+  margin: 0 10px;
+  font-weight: 500;
+}
+  
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+
+.navbar #log-out button {
+  height: 90%;
+  font-size: 25px;
+  padding: 5px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar ul li:last-child {
+  margin-left: 700px; /* Push the sign-out button to the right */
+}
+
+.navbar ul li:last-child a {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.navbar ul li:last-child a:hover {
+  background-color: #0056b3;
+}
+
+.scrollable-table {
+  position: relative;
+  margin: 20px auto;
+  width: 30%;
+  height: 90%;
+  max-width: 1200px;
+  max-height: 1200px;
+  overflow-x: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: translate(400px, -430px);
+  background-color: #EFEFEF;
+}
+
+
+.scrollable-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+  padding: 16px;
+  text-align: left; /* Align text to the left for better readability */
+  border-bottom: 1px solid #605D5C; /* Light gray border */
+  text-align: center;
+}
+
+.scrollable-table th {
+  background-color: #f2f2f2; /* Light gray header background */
+  color: #333; /* Dark text color */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.scrollable-table .patients-label {
+  padding: 15px; /* Adjust padding as needed */
+  text-align: center;
+  background-color: #2196F3; /* Blue header */
+  color: white; /* Text color */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Font weight */
+}
+
+.scrollable-table tbody tr {
+  transition: background-color 0.4s ease; /* Add transition effect */
+}
+
+.scrollable-table tbody tr:hover {
+  background-color: #D4F1FF; /* Light gray background on hover */
+}
+
+/* Custom scrollbar */
+.scrollable-table::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-table::-webkit-scrollbar-thumb {
+  background-color: #888; /* Dark gray scrollbar thumb */
+  border-radius: 5px;
+}
+
+.scrollable-table::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker gray on hover */
+}
+
+.scrollable-table::-webkit-scrollbar-track {
+  background-color: #f3f3f3; /* Light gray scrollbar track */
+}
+
+.billing-section {
+  /* Keep the same styles */
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 36%; /* Adjusted width */
+  height: 475px;
+  /* Adjusted position to ensure it doesn't overlap with the table */
+  position: absolute;
+  top: 50%; /* Adjusted top position */
+  left: 50%; /* Adjusted left position */
+  transform: translate(-63%, -43%);
+}
+
+
+.billing-section h2 {
+  margin-bottom: 10px;
+}
+
+.billing-details {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 35px;
+}
+
+.billing-details label {
+  font-weight: bold;
+}
+
+.billing-details input,
+.billing-details select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.billing-details input[type="date"] {
+  appearance: none;
+}
+
+.billing-details select {
+  appearance: none;
+  padding: 8px 30px 8px 10px;
+  background: url("arrow-down.png") no-repeat right #fff;
+  background-position: calc(100% - 10px) 50%;
+  background-size: 15px;
+}
+
+.billing-details button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.billing-details button:hover {
+  background-color: #0056b3;
+}
+
+.billing-details input[type="text"],
+.billing-details input[type="number"],
+.billing-details input[type="date"],
+.billing-details input[type="status"],
+.billing-details select {
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.billing-details select {
+  width: 250px; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#save_button {
+  position: absolute; /* Add absolute positioning to position the button relative to its closest positioned ancestor */
+  bottom: 28px; /* Adjust as needed */
+  right: 207px; /* Adjust as needed */
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+}
+
+#save_button:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  display: grid;
+  grid-gap: 10px;
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
+.image-container a{
+  width: 100px;
+}
+
+.image-container img {
+  width: 160px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Scale up the image slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+.success-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 24px;
+  animation: fadeInOut 3s ease-in-out forwards;
+  opacity: 0;
+  width: 200px;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}

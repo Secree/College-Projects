@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(water123.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background {
+  position: absolute;
+  top: 55%;
+  left: 89.6%;
+  transform: translate(-91%, -50%);
+  width: 97%;
+  height: 82%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 100px;
+}
+
+.navbar {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 60px 1.5px;
+  background-color: rgba(200, 200, 200, 0.2);
+  overflow: hidden;
+  border-radius: 50px; /* Adjusted */
+  width: 80%;
+  margin: 2% auto 0; /* Adjusted */
+}
+
+.navbar img {
+  transform: translate(-5px, 3px);
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+  
+.navbar ul li {
+  margin: 0 10px;
+  font-weight: 500;
+}
+  
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Adjusted border-radius */
+  transition: background-color 0.3s, color 0.3s; /* Added transition for background color and text color */
+}
+
+.navbar #log-out button {
+  height: 90%;
+  font-size: 25px;
+  padding: 5px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar ul li:last-child {
+  margin-left: 700px; /* Push the sign-out button to the right */
+}
+
+.navbar ul li:last-child a {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.navbar ul li:last-child a:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  margin-left: 690px;
+  margin-top: -37px; /* Adjust as needed */
+  text-align: center; /* Center the button */
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 4.9px 20px;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none;
+  border: 2px solid #007bff;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  font-weight: 600; /* Font weight */
+  font-size: 14px;
+}
+
+.back-button a:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.appointment-list {
+  margin-top: 20px; /* Adjust margin as needed */
+  padding: 20px;
+  border: 2px solid #0056b3;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+  border-radius: 10px; /* Rounded corners */
+  width: 1000px;
+  transform: translate(122px,30px);
+  height: 400px;
+  overflow-y: auto; /* Add scroll bar */
+}
+
+.appointment-list h2 {
+  margin-bottom: 10px; /* Adjust margin as needed */
+  color: #333; /* Heading color */
+}
+
+.appointment-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.appointment-list ul li:hover {
+  background-color: #eaeaea; /* Background color on hover */
+}
+
+/* Added styles for appointment-info */
+.appointment-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 12px;
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.appointment-info {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.appointment-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.appointment-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.appointment-list ul li:hover {
+    background-color: #eaeaea; /* Background color on hover */
+}
+
+.appointment-list ul li button {
+  padding: 5px 20px;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.appointment-list ul li button:hover {
+  background: linear-gradient(to right, #009688, #80c43e);
+}
