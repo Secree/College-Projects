@@ -1,0 +1,21 @@
+Warning: the program will encounter an error if you don't have java oracle version 22.
+
+Hello user, our program is designed for people who work and study for long periods of time.
+
+How it works:
+
+1. It has 4 challenges, each with a frame that will pop up at various times (10 minutes, 15 minutes, 20 minutes, and finally 30 minutes).
+
+2. After 30 minutes, it will loop. If you want to stop the loop, just click the "I give up" button.
+
+Note:
+
+If you don't like waiting that long for it to pop up, just open the system tray and click it there to 
+trigger the next challenge immediately.
+
+
+
+
+
+
+
